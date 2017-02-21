@@ -1,0 +1,79 @@
+buildscript {
+    repositories {
+        maven { url 'https://artifactory.int.avast.com/artifactory/maven' }
+        maven { url 'http://repo.spring.io/libs-release' }
+        maven { url 'http://repo.spring.io/plugins-release' }
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE")
+        classpath 'org.springframework:springloaded:1.2.0.RELEASE'
+
+    }
+}
+
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'application'
+
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = file("$buildDir/classes/main/")
+
+        testOutputDir = file('build-test')
+    }
+}
+
+
+bootRun {
+    addResources = true
+}
+
+bootRepackage {
+    enabled = true
+    withJarTask = jar
+    executable = true
+}
+
+springBoot {
+    mainClass = "com.avast.server.libver.Application"
+}
+
+
+repositories {
+    maven { url 'https://artifactory.int.avast.com/artifactory/maven' }
+    maven { url 'http://repo.spring.io/libs-release' }
+    maven { url 'http://repo.spring.io/plugins-release' }
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Version": project.getVersion())
+    }
+}
+
+
+
+allprojects {
+    tasks.withType(Javadoc).all { enabled = false }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group = "com.avast.server"
+
+version = "1.0.0"
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:1.4.2.RELEASE")
+    compile("org.springframework.boot:spring-boot-devtools:1.4.2.RELEASE")
+
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+
+    testCompile("org.springframework.boot:spring-boot-starter-test:1.4.2.RELEASE")
+}
+

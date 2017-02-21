@@ -1,0 +1,3201 @@
+:fflenvelope:allDeps
+projectIndex + PROJECT_SEPARATOR.length() + 1
+------------------------------------------------------------
+Project :fflenvelope
+------------------------------------------------------------
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+codeStyleTools
++--- org.brianmckenna:wartremover_2.10:0.14
+|    +--- org.scala-lang:scala-compiler:2.10.5 -> 2.11.6
+|    |    +--- org.scala-lang:scala-library:2.11.6
+|    |    +--- org.scala-lang:scala-reflect:2.11.6
+|    |    |    \--- org.scala-lang:scala-library:2.11.6
+|    |    +--- org.scala-lang.modules:scala-xml_2.11:1.0.3
+|    |    |    \--- org.scala-lang:scala-library:2.11.4 -> 2.11.6
+|    |    \--- org.scala-lang.modules:scala-parser-combinators_2.11:1.0.3
+|    |         \--- org.scala-lang:scala-library:2.11.2 -> 2.11.6
+|    +--- org.scala-lang:scala-library:2.10.5 -> 2.11.6
+|    \--- org.scalamacros:quasiquotes_2.10:2.0.1
+|         +--- org.scala-lang:scala-library:2.10.4 -> 2.11.6
+|         \--- org.scala-lang:scala-reflect:2.10.4 -> 2.11.6 (*)
++--- org.brianmckenna:wartremover_2.11:0.14
+|    +--- org.scala-lang:scala-compiler:2.11.6 (*)
+|    \--- org.scala-lang:scala-library:2.11.6
++--- com.typesafe:abide_2.11:0.1.0
+|    \--- com.typesafe:abide-core_2.11:0.1.0
+\--- com.typesafe:abide-core_2.11:0.1.0
+
+compile - Dependencies for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
+\--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
+\--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
+
+compileOnly - Compile dependencies for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
+\--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
+
+compileOptional
+No dependencies
+
+default - Configuration for default artifacts.
++--- org.scala-lang:scala-library:? FAILED
++--- com.avast.yap:yap-action-ffl_?:3.2.80 FAILED
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
+\--- com.avast.utils2:utils-common:3.4.35
+     +--- com.avast.metrics:metrics-api:1.7.30
+     \--- org.slf4j:slf4j-api:1.7.15
+
+runtime - Runtime dependencies for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
+\--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
+
+scalaStyle - Scala Style libraries to be used for this project.
+No dependencies
+
+testCompile - Dependencies for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1 -> 2.11.7
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.scalatest:scalatest_?:2.2.6 -> org.scalatest:scalatest_2.11:2.2.6
+     +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+     +--- org.scala-lang:scala-reflect:2.11.7 (*)
+     \--- org.scala-lang.modules:scala-xml_2.11:1.0.2
+          \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1 -> 2.11.7
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.scalatest:scalatest_?:2.2.6 -> org.scalatest:scalatest_2.11:2.2.6
+     +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+     +--- org.scala-lang:scala-reflect:2.11.7 (*)
+     \--- org.scala-lang.modules:scala-xml_2.11:1.0.2
+          \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+
+testCompileOnly - Compile dependencies for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1 -> 2.11.7
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.scalatest:scalatest_?:2.2.6 -> org.scalatest:scalatest_2.11:2.2.6
+     +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+     +--- org.scala-lang:scala-reflect:2.11.7 (*)
+     \--- org.scala-lang.modules:scala-xml_2.11:1.0.2
+          \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+
+testRuntime - Runtime dependencies for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.1
+|    |         |              |         +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |              |         \--- org.slf4j:slf4j-api:1.7.19 -> 1.7.21
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1 -> 2.11.7
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7
+|    |    +--- com.avast:jmx-publisher:1.1.1
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.google.protobuf:protobuf-java:2.5.0
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.1 (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.scalatest:scalatest_?:2.2.6 -> org.scalatest:scalatest_2.11:2.2.6
+     +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+     +--- org.scala-lang:scala-reflect:2.11.7 (*)
+     \--- org.scala-lang.modules:scala-xml_2.11:1.0.2
+          \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+
+zinc - The Zinc incremental compiler to be used for this Scala project.
+No dependencies
+:wifi-finder:allDeps
+
+------------------------------------------------------------
+Project :wifi-finder
+------------------------------------------------------------
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+codeStyleTools
++--- org.brianmckenna:wartremover_2.10:0.14
+|    +--- org.scala-lang:scala-compiler:2.10.5 -> 2.11.6
+|    |    +--- org.scala-lang:scala-library:2.11.6
+|    |    +--- org.scala-lang:scala-reflect:2.11.6
+|    |    |    \--- org.scala-lang:scala-library:2.11.6
+|    |    +--- org.scala-lang.modules:scala-xml_2.11:1.0.3
+|    |    |    \--- org.scala-lang:scala-library:2.11.4 -> 2.11.6
+|    |    \--- org.scala-lang.modules:scala-parser-combinators_2.11:1.0.3
+|    |         \--- org.scala-lang:scala-library:2.11.2 -> 2.11.6
+|    +--- org.scala-lang:scala-library:2.10.5 -> 2.11.6
+|    \--- org.scalamacros:quasiquotes_2.10:2.0.1
+|         +--- org.scala-lang:scala-library:2.10.4 -> 2.11.6
+|         \--- org.scala-lang:scala-reflect:2.10.4 -> 2.11.6 (*)
++--- org.brianmckenna:wartremover_2.11:0.14
+|    +--- org.scala-lang:scala-compiler:2.11.6 (*)
+|    \--- org.scala-lang:scala-library:2.11.6
++--- com.typesafe:abide_2.11:0.1.0
+|    \--- com.typesafe:abide-core_2.11:0.1.0
+\--- com.typesafe:abide-core_2.11:0.1.0
+
+compile - Dependencies for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
+\--- net.logstash.logback:logstash-logback-encoder:4.5.1
+     +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+     \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+          +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+          \--- com.fasterxml.jackson.core:jackson-core:2.5.4
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
+\--- net.logstash.logback:logstash-logback-encoder:4.5.1
+     +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+     \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+          +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+          \--- com.fasterxml.jackson.core:jackson-core:2.5.4
+
+compileOnly - Compile dependencies for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
+\--- net.logstash.logback:logstash-logback-encoder:4.5.1
+     +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+     \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+          +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+          \--- com.fasterxml.jackson.core:jackson-core:2.5.4
+
+compileOptional
+No dependencies
+
+default - Configuration for default artifacts.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 FAILED
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6
+|         +--- org.slf4j:slf4j-api:1.7.21
+|         \--- com.avast.metrics:metrics-api:1.7.30
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |         +--- io.netty:netty-all:4.0.36.Final
+|    |         +--- net.jcip:jcip-annotations:1.0
+|    |         +--- com.typesafe:config:1.3.0
+|    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6 (*)
+|    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |         +--- org.scala-lang:scala-library:2.11.8
+|    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    +--- org.scala-lang:scala-library:2.11.8
+|    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    +--- com.typesafe:config:1.3.0
+|    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |         \--- com.typesafe:config:1.3.0
+|    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
+\--- net.logstash.logback:logstash-logback-encoder:4.5.1
+     +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+     \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+          +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+          \--- com.fasterxml.jackson.core:jackson-core:2.5.4
+
+runtime - Runtime dependencies for source set 'main'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
+\--- net.logstash.logback:logstash-logback-encoder:4.5.1
+     +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+     \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+          +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+          \--- com.fasterxml.jackson.core:jackson-core:2.5.4
+
+scalaStyle - Scala Style libraries to be used for this project.
+No dependencies
+
+testCompile - Dependencies for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
++--- net.logstash.logback:logstash-logback-encoder:4.5.1
+|    +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+|    \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+|         +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+|         \--- com.fasterxml.jackson.core:jackson-core:2.5.4
++--- com.google.code.gson:gson:2.3.1
++--- org.springframework:spring-test:4.1.5.RELEASE
+|    \--- org.springframework:spring-core:4.1.5.RELEASE -> 4.3.2.RELEASE (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.apache.commons:commons-math3:3.2
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
++--- net.logstash.logback:logstash-logback-encoder:4.5.1
+|    +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+|    \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+|         +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+|         \--- com.fasterxml.jackson.core:jackson-core:2.5.4
++--- com.google.code.gson:gson:2.3.1
++--- org.springframework:spring-test:4.1.5.RELEASE
+|    \--- org.springframework:spring-core:4.1.5.RELEASE -> 4.3.2.RELEASE (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.apache.commons:commons-math3:3.2
+
+testCompileOnly - Compile dependencies for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
++--- net.logstash.logback:logstash-logback-encoder:4.5.1
+|    +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+|    \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+|         +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+|         \--- com.fasterxml.jackson.core:jackson-core:2.5.4
++--- com.google.code.gson:gson:2.3.1
++--- org.springframework:spring-test:4.1.5.RELEASE
+|    \--- org.springframework:spring-core:4.1.5.RELEASE -> 4.3.2.RELEASE (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.apache.commons:commons-math3:3.2
+
+testRuntime - Runtime dependencies for source set 'test'.
++--- org.scala-lang:scala-library:? -> 2.11.8
++--- project :fflenvelope
+|    +--- org.scala-lang:scala-library:? -> 2.11.8
+|    +--- com.avast.yap:yap-action-ffl_?:3.2.80 -> com.avast.yap:yap-action-ffl_2.11:3.2.80
+|    |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    +--- com.avast.yap:yap-action-gpb_2.11:3.2.80
+|    |    |    +--- io.netty:netty-buffer:4.0.36.Final
+|    |    |    |    \--- io.netty:netty-common:4.0.36.Final
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.avast.yap:yap-api:3.2.80
+|    |    |    |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |    \--- com.avast.yap:yap-core_2.11:3.2.80
+|    |    |         +--- io.netty:netty-all:4.0.36.Final
+|    |    |         +--- net.jcip:jcip-annotations:1.0
+|    |    |         +--- com.typesafe:config:1.3.0
+|    |    |         +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    |         +--- com.avast.metrics:metrics-dropwizard:1.7.30
+|    |    |         |    +--- io.dropwizard.metrics:metrics-core:3.1.2
+|    |    |         |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |         |    +--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |    \--- com.avast.metrics:metrics-core:1.7.30
+|    |    |         |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         +--- com.avast:kluzo_2.11:1.1.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast:continuity-core-scala_2.11:1.1.8
+|    |    |         |         +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.10
+|    |    |         |              +--- com.avast.continuity:continuity-core-scala_2.11:1.2.10
+|    |    |         |              |    +--- org.slf4j:slf4j-api:1.7.13 -> 1.7.21
+|    |    |         |              |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |              |    \--- com.avast.utils2:utils-common:3.5.0 -> 3.5.6
+|    |    |         |              |         +--- org.slf4j:slf4j-api:1.7.21
+|    |    |         |              |         \--- com.avast.metrics:metrics-api:1.7.30
+|    |    |         |              \--- org.scala-lang:scala-library:2.11.8
+|    |    |         +--- com.avast.continuity:continuity-netty_2.11:1.2.8
+|    |    |         |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |    \--- com.avast.continuity:continuity-netty-scala_2.11:1.2.8
+|    |    |         |         +--- io.netty:netty-transport:4.0.36.Final
+|    |    |         |         |    \--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    |         |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         |         \--- com.avast.continuity:continuity-core_2.11:1.2.8 -> 1.2.10 (*)
+|    |    |         +--- org.scala-lang:scala-library:2.11.8
+|    |    |         \--- com.avast.utils2:utils-common:3.5.1 -> 3.5.6 (*)
+|    |    +--- io.netty:netty-buffer:4.0.36.Final (*)
+|    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    +--- com.avast.utils2:utils-scala_2.11:3.5.1
+|    |    |    +--- org.scala-lang:scala-library:2.11.8
+|    |    |    +--- com.typesafe.scala-logging:scala-logging_2.11:3.1.0
+|    |    |    |    +--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    +--- org.scala-lang:scala-reflect:2.11.1
+|    |    |    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.typesafe:config:1.3.0
+|    |    |    \--- com.iheart:ficus_2.11:1.2.1
+|    |    |         +--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
+|    |    |         \--- com.typesafe:config:1.3.0
+|    |    +--- com.avast:crypto-utils_2.11:2.2.23
+|    |    |    +--- com.avast:crypto-base:1.0.10
+|    |    |    |    \--- com.avast:bytecompressor:1.1.2
+|    |    |    +--- commons-codec:commons-codec:1.7 -> 1.10
+|    |    |    +--- com.avast:jmx-publisher:1.1.1 -> 1.4.2
+|    |    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.21
+|    |    +--- com.avast.yap:yap-api:3.2.80 (*)
+|    |    \--- com.avast.yap:yap-core_2.11:3.2.80 (*)
+|    +--- com.avast:rest2ffl-envelope:1.1.7
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    \--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot:1.4.0.RELEASE
+|    |    +--- org.springframework:spring-core:4.3.2.RELEASE
+|    |    |    \--- commons-logging:commons-logging:1.2
+|    |    \--- org.springframework:spring-context:4.3.2.RELEASE
+|    |         +--- org.springframework:spring-aop:4.3.2.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.3.2.RELEASE
+|    |         |    |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         |    \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|    |         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    |         \--- org.springframework:spring-expression:4.3.2.RELEASE
+|    |              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-autoconfigure:1.4.0.RELEASE
+|    |    \--- org.springframework.boot:spring-boot:1.4.0.RELEASE (*)
+|    +--- org.springframework.boot:spring-boot-starter-logging:1.4.0.RELEASE
+|    |    +--- ch.qos.logback:logback-classic:1.1.7
+|    |    |    +--- ch.qos.logback:logback-core:1.1.7
+|    |    |    \--- org.slf4j:slf4j-api:1.7.20 -> 1.7.21
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.21
+|    |    |    \--- org.slf4j:slf4j-api:1.7.21
+|    |    \--- org.slf4j:log4j-over-slf4j:1.7.21
+|    |         \--- org.slf4j:slf4j-api:1.7.21
+|    +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|    \--- org.yaml:snakeyaml:1.17
++--- org.springframework.boot:spring-boot-starter-jdbc:1.4.0.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.4.0.RELEASE (*)
+|    +--- org.apache.tomcat:tomcat-jdbc:8.5.4
+|    |    \--- org.apache.tomcat:tomcat-juli:8.5.4
+|    \--- org.springframework:spring-jdbc:4.3.2.RELEASE
+|         +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.2.RELEASE (*)
+|         \--- org.springframework:spring-tx:4.3.2.RELEASE
+|              +--- org.springframework:spring-beans:4.3.2.RELEASE (*)
+|              \--- org.springframework:spring-core:4.3.2.RELEASE (*)
++--- com.avast.yap:yap-action-ffl_2.11:3.2.80 (*)
++--- com.avast.yap:yap-action-gpb_2.11:3.2.80 (*)
++--- com.avast.client:clients-factory_2.11:2.3.19 -> 2.4.34
+|    +--- com.avast.client:clients-common_2.11:2.4.34
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    |    \--- commons-codec:commons-codec:1.9 -> 1.10
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3
+|    |    |    \--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88
+|    |    |    +--- com.google.code.findbugs:jsr305:2.0.1
+|    |    |    +--- org.slf4j:slf4j-api:1.7.7 -> 1.7.21
+|    |    |    +--- com.google.guava:guava:18.0
+|    |    |    +--- com.avast:jmx-publisher:1.2.0 -> 1.4.2 (*)
+|    |    |    +--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
+|    |    |    +--- joda-time:joda-time:2.7 -> 2.9
+|    |    |    \--- org.scala-lang:scala-library:2.11.1 -> 2.11.8
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:crypto-utils_2.11:2.2.22 -> 2.2.23 (*)
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-sync_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- com.avast.client:client-async_2.11:2.4.34
+|    |    +--- com.avast.client:clients-common_2.11:2.4.34 (*)
+|    |    +--- org.apache.httpcomponents:httpasyncclient:4.1
+|    |    |    +--- org.apache.httpcomponents:httpcore:4.4.1 -> 4.4.3
+|    |    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.1 -> 4.4.3 (*)
+|    |    |    \--- org.apache.httpcomponents:httpclient:4.4.1 -> 4.5.1 (*)
+|    |    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    |    +--- joda-time:joda-time:2.9
+|    |    +--- com.google.guava:guava:18.0
+|    |    +--- commons-collections:commons-collections:3.2.1
+|    |    +--- commons-codec:commons-codec:1.10
+|    |    +--- org.apache.commons:commons-lang3:3.4
+|    |    +--- org.apache.httpcomponents:httpcore-nio:4.4.3 (*)
+|    |    +--- org.apache.httpcomponents:httpcore:4.4.3
+|    |    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    |    +--- org.bouncycastle:bcprov-jdk15on:1.53
+|    |    +--- org.kohsuke.jetbrains:annotations:9.0
+|    |    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    |    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    |    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    |    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
+|    +--- joda-time:joda-time:2.9
+|    +--- org.apache.httpcomponents:httpclient:4.5.1 (*)
+|    +--- org.apache.httpcomponents:httpasyncclient:4.1 (*)
+|    +--- com.avast.utils:utils-common_2.11:1.8.88 (*)
+|    +--- com.typesafe:config:1.2.1 -> 1.3.0
+|    +--- com.avast:jmx-publisher:1.4.2 (*)
+|    +--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
+|    +--- org.slf4j:jul-to-slf4j:1.7.12 -> 1.7.21 (*)
+|    +--- org.slf4j:jcl-over-slf4j:1.7.12 -> 1.7.21 (*)
+|    \--- org.scala-lang:scala-library:2.11.6 -> 2.11.8
++--- org.codehaus.jackson:jackson-mapper-asl:1.9.13
+|    \--- org.codehaus.jackson:jackson-core-asl:1.9.13
++--- com.avast:lansec-proto:1.1.8
+|    \--- com.google.protobuf:protobuf-java:2.6.1
++--- com.typesafe:config:1.3.0
++--- org.slf4j:slf4j-api:1.7.21
++--- ch.qos.logback:logback-classic:1.1.2 -> 1.1.7 (*)
++--- org.codehaus.janino:janino:2.7.8
+|    \--- org.codehaus.janino:commons-compiler:2.7.8
++--- io.dropwizard.metrics:metrics-core:3.1.0 -> 3.1.2 (*)
++--- org.mybatis:mybatis:3.4.1
++--- org.mybatis:mybatis-spring:1.3.0
++--- postgresql:postgresql:9.1-901.jdbc4
++--- com.avast:rest2ffl-envelope:1.1.7
++--- com.zaxxer:HikariCP:2.4.3
+|    \--- org.slf4j:slf4j-api:1.7.12 -> 1.7.21
++--- com.avast.server:wififinder-commons:1.0.26
++--- com.avast.server:wififinder-api-backend:2.0.7
++--- org.liquibase:liquibase-core:3.1.1
+|    \--- org.yaml:snakeyaml:1.13 -> 1.17
++--- com.avast.utils2:utils-common:3.4.35 -> 3.5.6 (*)
++--- io.netty:netty-all:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-codec:4.0.34.Final
+|    \--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- io.netty:netty-common:4.0.34.Final -> 4.0.36.Final
++--- io.netty:netty-handler:4.0.34.Final
+|    +--- io.netty:netty-buffer:4.0.34.Final -> 4.0.36.Final (*)
+|    +--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
+|    \--- io.netty:netty-codec:4.0.34.Final (*)
++--- io.netty:netty-transport:4.0.34.Final -> 4.0.36.Final (*)
++--- it.unimi.dsi:fastutil:7.0.13
++--- com.avast.analytics:analytics-client_2.11:1.1.21
+|    +--- org.slf4j:slf4j-api:1.7.21
+|    +--- com.avast.metrics:metrics-api:1.7.30
+|    +--- com.avast.client:clients-factory_2.11:2.4.34 (*)
+|    +--- com.avast.analytics:analytics-utils:2.14.30 -> 2.15.31
+|    |    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    \--- com.avast.analytics:analytics-proto-sender:2.15.31 -> 3.0.73
+|    +--- com.avast.utils2:utils-common:3.5.6 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.1.17 -> 3.3.33
+|         \--- org.scala-lang:scala-library:2.11.7 -> 2.11.8
++--- com.avast.analytics:analytics-validators:2.15.34
+|    +--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-proto:2.15.34
+|    +--- com.avast.analytics:analytics-catalog-interface:2.15.31
+|    |    \--- com.googlecode.json-simple:json-simple:1.1
+|    +--- org.apache.avro:avro:1.7.7
+|    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    +--- com.thoughtworks.paranamer:paranamer:2.3
+|    |    +--- org.xerial.snappy:snappy-java:1.0.5
+|    |    +--- org.apache.commons:commons-compress:1.4.1
+|    |    |    \--- org.tukaani:xz:1.0
+|    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    +--- org.slf4j:slf4j-api:1.7.16 -> 1.7.21
+|    +--- com.avast.analytics:analytics-schema-registry:2.15.31
+|    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    +--- com.avast.analytics:analytics-schema-converter:2.15.31
+|    |    |    +--- com.avast.analytics:analytics-catalog-interface:2.15.31 (*)
+|    |    |    +--- org.apache.avro:avro-protobuf:1.7.7
+|    |    |    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    |    |    +--- com.google.protobuf:protobuf-java:2.4.1 -> 2.6.1
+|    |    |    |    +--- org.codehaus.jackson:jackson-core-asl:1.9.13
+|    |    |    |    +--- org.codehaus.jackson:jackson-mapper-asl:1.9.13 (*)
+|    |    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.21
+|    |    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    |    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    +--- com.googlecode.json-simple:json-simple:1.1
+|    |    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    |    \--- com.avast.analytics:analytics-proto-processor:2.15.31 -> 3.0.73
+|    +--- com.avast.analytics:analytics-avro:2.15.34
+|    |    +--- org.apache.avro:avro:1.7.7 (*)
+|    |    \--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- org.apache.avro:avro-protobuf:1.7.7 (*)
+|    +--- com.google.protobuf:protobuf-java:2.5.0 -> 2.6.1
+|    +--- com.avast.analytics:analytics-utils:2.15.31 (*)
+|    \--- com.avast.utils2:utils-gpb_2.11:3.3.33 (*)
++--- com.avast.analytics:analytics-proto-sender:3.0.73
++--- com.avast.analytics:analytics-proto-processor:3.0.73
++--- net.logstash.logback:logstash-logback-encoder:4.5.1
+|    +--- ch.qos.logback:logback-core:1.1.3 -> 1.1.7
+|    \--- com.fasterxml.jackson.core:jackson-databind:2.5.4
+|         +--- com.fasterxml.jackson.core:jackson-annotations:2.5.0
+|         \--- com.fasterxml.jackson.core:jackson-core:2.5.4
++--- com.google.code.gson:gson:2.3.1
++--- org.springframework:spring-test:4.1.5.RELEASE
+|    \--- org.springframework:spring-core:4.1.5.RELEASE -> 4.3.2.RELEASE (*)
++--- junit:junit:4.12
+|    \--- org.hamcrest:hamcrest-core:1.3
+\--- org.apache.commons:commons-math3:3.2
+
+zinc - The Zinc incremental compiler to be used for this Scala project.
+No dependencies
+
+BUILD SUCCESSFUL
+
+Total time: 33.193 secs

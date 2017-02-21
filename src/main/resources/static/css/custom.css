@@ -1,0 +1,101 @@
+textarea {
+    font-family: monospace;
+    width: 60%;
+    min-height: 400px;
+    background-color: #fafafa;
+    margin: 10px;
+    padding: 20px;
+    border: 1px lightgray;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.btn {
+    margin-left: 20px;
+}
+
+.tab-gradle{
+    background:url("../img/gradle.png") no-repeat center;
+    background-size: 90%;
+    min-width: 85px;
+    min-height: 52px;
+}
+.tab-maven{
+    background:url("../img/maven.png") no-repeat center;
+    background-size: 90%;
+    min-width: 85px;
+    min-height: 52px;
+}
+
+/*noinspection CssOverwrittenProperties*/
+.custom-icon {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    /*display: block; !* This is required *!*/
+}
+
+.custom-icon.normal {
+    width: 34px;
+    height: 20px;
+}
+
+
+.custom-icon.icon-bulb {
+    top: 0 !important;
+    background: url("../img/glyphicons-65-lightbulb.png") transparent no-repeat center;
+    background-size: cover;
+}
+
+.custom-icon.small {
+    width: 22px;
+    height: 20px;
+}
+
+.custom-icon.bigSquare {
+    width: 30px;
+    height: 30px;
+}
+
+.fixed-table-body thead th .th-inner, .table th {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.custom-icon.glyph {
+    width: 20px;
+    height: 26px;
+}
+
+
+
+.drop_zone {
+    border: 2px dashed #bbb;
+    border-radius: 5px;
+    padding: 25px;
+    background-color: #FCFCFC;
+}
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: lightcoral;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: lightcoral;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: lightcoral;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: lightcoral;
+}
