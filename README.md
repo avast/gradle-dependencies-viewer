@@ -5,7 +5,7 @@ A simple web UI to analyze dependencies for your project based on the text data 
 [![Build Status - Master](https://travis-ci.org/avast/gradle-dependencies-viewer.svg?branch=master)](https://travis-ci.org/avast/gradle-dependencies-viewer) ![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat) ![Windows](https://img.shields.io/badge/os-windows-green.svg?style=flat) ![Apache 2](https://img.shields.io/badge/license-Apache2-blue.svg?style=flat)
 ## Purpose
 Since there is still no good support for Gradle dependencies view in IntelliJ IDEA (at least not good as for Maven is) and it's really difficult to browse (especially for larger projects with tens of listed dependencies) we decided to create this very simple tool.
-This tool helps us to solve such common dependency-hell problem like *"Where this dependency/artifact came from?"* or *"Which dependencies are coming with this included artifact?"*.
+This tool helps us to solve such common dependency-hell problem like *"Where this dependency/artifact came from?"* or *"Which dependencies are coming with this artifact?"*.
 
 ## Using dependencies viewer
 1. Run command ```gradle dependencies > dep.txt``` inside of your project directory.`
@@ -15,7 +15,7 @@ This tool helps us to solve such common dependency-hell problem like *"Where thi
 
 ## Working demo
 [You can try to use it here](http://gradle.vity.cz/)
-
+(sometimes it requires more time to load, please be patient)
 ## Launching locally
 
 ### Requirements:
