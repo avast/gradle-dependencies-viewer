@@ -1,6 +1,6 @@
 # Gradle dependencies viewer (tool)
 A simple web UI to analyze dependencies for your project based on the text data generated from ```gradle dependencies``` command.
-![Image of HDFS-Shell](https://github.com/avast/hdfs-shell/blob/master/web/screenshot.png)
+![Image of HDFS-Shell](https://github.com/avast/gradle-dependencies-viewer/blob/master/web/screenshot.png)
 
 [![Build Status - Master](https://travis-ci.org/avast/gradle-dependencies-viewer.svg?branch=master)](https://travis-ci.org/avast/gradle-dependencies-viewer) ![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat) ![Windows](https://img.shields.io/badge/os-windows-green.svg?style=flat) ![Apache 2](https://img.shields.io/badge/license-Apache2-blue.svg?style=flat)
 ## Purpose
