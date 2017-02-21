@@ -13,28 +13,28 @@ This tool helps us to solve such common dependency-hell problem like *"Where thi
 3. Browse dependencies tree in the left panel and/or use search input box to find artifact you need to explore
 4. If you want to generate gradle code to exclude some artifact, press right mouse button to view context menu and select *Exclude artifact*.
 
-### Working demo
+## Working demo
 [You can try to use it here](http://gradle.vity.cz/)
 
-### Launching 
-Default port value has been set to 8090.
+## Launching locally
 
-#### Requirements:
+### Requirements:
 - JDK 1.8
 
-#### Building from sources
+### Building from sources
 ```gradle build``` or ```gradlew.bat build```
 
-#### Running binary
-##### Running application 
+### Running binary
+#### Running application
 Extract ```build/distributions/gradle-dependency-viewer-x.x.x.zip``` (or .tar on Linux) and use ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
 
 **OR**
-##### Running single fat jar
+#### Running single fat jar
 ```java -jar gradle-dependency-viewer-1.0.0.jar --server.port=8090```
 
 File ```gradle-dependency-viewer-x.x.x.jar``` is located in ```build/libs```.
 
+Default port value has been set to 8090.
 Then open [http://localhost:8090/](http://localhost:8090/) in your web browser.
 
 ##Project programming info
@@ -43,6 +43,6 @@ The project is using Gradle 3.x to build. The project is based on Spring Boot us
 ##License
 Apache 2 License.
 
-###Contact
+##Contact
 Author&Maintainer: Ladislav Vitasek  aka Vity - vitasek/@/avast.com
 
