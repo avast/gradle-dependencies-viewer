@@ -15,7 +15,7 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 apply plugin: 'application'
 
 idea {
@@ -66,7 +66,7 @@ targetCompatibility = 1.8
 
 group = "com.avast.server"
 
-version = "1.0.0"
+version = '1.0.0'
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf:1.4.2.RELEASE")
