@@ -8,7 +8,7 @@ Since there is still no good support for Gradle dependencies view in IntelliJ ID
 This tool helps us to solve such common dependency-hell problem like "where this dependency/artifact came from?" or "which dependencies are coming with this included artifact?".
 
 ## Using dependencies viewer
-1. Run command ```gradle dependencies > dep.txt``` .
+1. Inside of your project directory run command ```gradle dependencies > dep.txt``` .
 2. Drag&Drop dep.txt file into input area. File will be automatically uploaded and parsed. Alternativaly you can copy&paste the output of gradle dependencies command into the input area.
 3. Browse dependencies tree in the left panel and/or use search input box to find artifact you need to explore
 4. If you want to generate gradle code to exclude some artifact, press right mouse button to view context menu and select *Exclude artifact*.
@@ -26,7 +26,7 @@ Default port value has been set to 8090.
 
 #### Running binary
 ##### Running application 
-Extract ```build/distributions/gradle-dependency-viewer-x.x.x.zip``` and use ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
+Extract ```build/distributions/gradle-dependency-viewer-x.x.x.zip``` (or .tar on Linux) and use ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
 
 **OR**
 ##### Running single fat jar
@@ -34,7 +34,7 @@ Extract ```build/distributions/gradle-dependency-viewer-x.x.x.zip``` and use ```
 
 File ```gradle-dependency-viewer-x.x.x.jar``` is located in ```build/libs```.
 
-Then open ```http://localhost:8090/``` in your web browser.
+Then open [http://localhost:8090/](http://localhost:8090/) in your web browser.
 
 ##Project programming info
 The project is using Gradle 3.x to build. The project is based on Spring Boot using Thymeleaf template engine. 
@@ -44,7 +44,4 @@ Apache 2 License.
 
 ###Contact
 Author&Maintainer: Ladislav Vitasek  - vitasek/@/avast.com
-
-
-
 
