@@ -18,16 +18,16 @@ This tool helps us to solve such common dependency-hell problem like *"Where thi
 (it's located on Heroku, sometimes it requires more time to load, please be patient)
 ## Launching app locally
 
-### Requirements:
+#### Requirements:
 - JDK 1.8
 
-### Running from the latest release
+#### Running from the latest release
 1. [Download current release](https://github.com/avast/gradle-dependencies-viewer/files/790796/gradle-dependencies-viewer-1.0.0.zip)
 2. Use ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
 
 **OR**
 
-### Running from sources
+#### Running from sources
 1. Build binaries ```gradle build``` or ```gradlew.bat build```  or
 2. Extract ```build/distributions/gradle-dependency-viewer-x.x.x.zip``` (or .tar on Linux)
 3. Run script ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
