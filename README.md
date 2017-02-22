@@ -32,9 +32,9 @@ This tool helps us to solve such common dependency-hell problem like *"Where thi
 2. Extract ```build/distributions/gradle-dependency-viewer-x.x.x.zip``` (or .tar on Linux)
 3. Run script ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
 4. **OR** Run single fat jar ```java -jar gradle-dependency-viewer-1.0.0.jar --server.port=8090```
-- File ```gradle-dependency-viewer-x.x.x.jar``` is located in ```build/libs```.
+ - File ```gradle-dependency-viewer-x.x.x.jar``` is located in ```build/libs```.
 5. Open [http://localhost:8090/](http://localhost:8090/) in your web browser.
-- Default port value has been set to 8090.
+ - Default port value has been set to 8090.
 
 
 ##Project programming info
