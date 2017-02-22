@@ -23,7 +23,7 @@ This tool helps us to solve such common dependency-hell problem like *"Where thi
 
 #### Running from the latest release
 1. [Download current release](https://github.com/avast/gradle-dependencies-viewer/files/790796/gradle-dependencies-viewer-1.0.0.zip)
-2. Use ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
+2. Extract zip file and use ```/bin/gradle-dependency-viewer.bat``` (Win) or ```/bin/gradle-dependency-viewer``` (Linux)
 
 **OR**
 
