@@ -37,12 +37,12 @@ This tool helps us to solve such common dependency-hell problem like *"Where thi
  - Default port value has been set to 8090.
 
 
-##Project programming info
+## Project programming info
 The project is using Gradle 3.x to build. The project is based on Spring Boot using Thymeleaf template engine. 
 
-##License
+## License
 Apache 2 License.
 
-##Contact
+## Contact
 Author&Maintainer: Ladislav Vitasek  aka Vity - vitasek/@/avast.com
 
