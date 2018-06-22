@@ -1,6 +1,5 @@
 buildscript {
     repositories {
-        maven { url 'https://artifactory.int.avast.com/artifactory/maven' }
         maven { url 'http://repo.spring.io/libs-release' }
         maven { url 'http://repo.spring.io/plugins-release' }
     }
@@ -44,7 +43,6 @@ springBoot {
 
 
 repositories {
-    maven { url 'https://artifactory.int.avast.com/artifactory/maven' }
     maven { url 'http://repo.spring.io/libs-release' }
     maven { url 'http://repo.spring.io/plugins-release' }
 }
