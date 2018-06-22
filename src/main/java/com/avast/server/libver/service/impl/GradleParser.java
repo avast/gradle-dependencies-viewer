@@ -49,14 +49,15 @@ public class GradleParser {
             } else {
                 projectDepsData = data.substring(projectIndex);
             }
-            fillSourceSets(projectIndex, subproject, projectDepsData);
+            fillSourceSets(subproject, projectDepsData);
             projectIndex = projectMatcher.end();
         }
         return gradleDepsDescriptor;
     }
 
-    private void fillSourceSets(int sourceIndex, Subproject subproject, String projectDepsData) throws ParseException {
+    private void fillSourceSets(Subproject subproject, String projectDepsData) throws ParseException {
         final Matcher matcher = TREE_LINE.matcher(projectDepsData);
+        int sourceIndex = 0;
         while (matcher.find(sourceIndex)) {
             final int treeLineStart = matcher.start();
             final int titleIndex = projectDepsData.lastIndexOf("\n\n", treeLineStart);
