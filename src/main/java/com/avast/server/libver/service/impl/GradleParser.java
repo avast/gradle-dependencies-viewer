@@ -111,7 +111,7 @@ public class GradleParser {
                 } else {
                     if (currentNode.level + 1 < lineLevel) { // on next level
                         lastNode.addChild(newNode);
-                        currentLine = walkTree(lastNode, getLine());
+                        currentLine = walkTree(newNode, getLine());
                     }
                 }
             }
