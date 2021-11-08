@@ -38,7 +38,7 @@ This tool helps us to solve such common dependency-hell problem like *"Where thi
 
 
 ## Project programming info
-The project is using Gradle 3.x to build. The project is based on Spring Boot using Thymeleaf template engine. 
+The project is using Gradle 7.x to build. The project is based on Spring Boot using Thymeleaf template engine. 
 
 ## License
 Apache 2 License.
